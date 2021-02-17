@@ -1,0 +1,44 @@
+.List_item {
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  height: 10rem;
+  box-shadow: 0 0 8px rgba(40, 40, 40, 0.15);
+  position: relative;
+  cursor: grab;
+}
+
+.List_item:active {
+  cursor: grabbing;
+  background-color: transparent;
+  color: transparent;
+  border: 1px dashed #257aba;
+}
+
+.List_item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.List_item:last-child {
+  margin-bottom: 8px;
+}
+
+.List_item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 25%;
+  width: 6px;
+  height: 8px;
+  background-color: #2574ba;
+}
+
+.List_item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: 25%;
+  width: 6px;
+  height: 8px;
+  background-color: #2574ba;
+}

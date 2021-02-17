@@ -1,0 +1,31 @@
+.List {
+  background-color: rgba(256, 256, 256, 0.2);
+  border-radius: 0 16px 0 0;
+  padding: 8px 8px 0 8px;
+  max-height: calc(100vh - 24px);
+  display: flex;
+  flex-direction: column;
+}
+
+.list_header {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.list_header strong {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.list_header strong.list_counter {
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.List .list_items {
+  overflow-y: auto;
+}

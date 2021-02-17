@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import List from "./components/List";
+import "./styles/app.css";
 
-function App() {
+const lists = [
+  { id: 2, title: "List 1", items: [1, 2] },
+  { id: 2, title: "List 2", items: [1, 2, 3] },
+  { id: 3, title: "List 3", items: [1, 2] },
+  { id: 4, title: "List 4", items: [1, 2] },
+];
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="App">
+      {lists.map((list) => (
+        <List key={list.id} title={list.title} items={list.items} />
+      ))}
     </div>
   );
-}
+};
 
 export default App;

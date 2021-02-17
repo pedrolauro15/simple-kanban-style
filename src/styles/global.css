@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+}
+
+*,
+body,
+input,
+textarea,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #173146;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #173146dd;
+}
